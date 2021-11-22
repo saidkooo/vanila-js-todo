@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(90deg, rgb(241, 205, 0), rgb(0, 189, 0));
+    height: 100vh;
+}
+.container {
+    text-align: center;
+}
+.todo-title {
+    color: #FFFFFF;
+}
+.add-todo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.add-todo-input {
+    width: 170px;
+    padding: 5px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+}
+.add-todo-btn {
+    padding: 5px 10px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    color: rgb(241, 205, 0);
+    transition: .3s;
+}
+.add-todo-btn:hover {
+    background-color: rgb(241, 205, 0);
+    color: #FFFFFF;
+}
+.add-todo-filter {
+    margin-left: 10px;
+    position: relative;
+    padding: 5px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    transition: .3s;
+}
+.add-todo-filter:hover {
+    color: rgb(241, 205, 0);
+    appearance: rgb(241, 205, 0);
+}
+.todo-list {
+    list-style: none;
+}
+.todo-list-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.todo-list-item-paragraph {
+    width: 170px;
+    margin-bottom: 0;
+    padding: 5px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: left;
+    transition: .3s;
+}
+.todo-list-item-complete-btn,
+.todo-list-item-delete-btn {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    transition: .3s;
+}
+.todo-list-item-complete-btn {
+    background-color: #0b8a00;
+}
+.todo-list-item-complete-btn:hover {
+    background-color: #FFFFFF;
+    color: #0b8a00;
+}
+.todo-list-item-delete-btn {
+    background-color: #c00000;
+}
+.todo-list-item-delete-btn:hover {
+    background-color: #FFFFFF;
+    color: #c00000;
+}
+.deleted {
+    opacity: 0;
+    transform: translate(100px);
+    transition: .3s;
+}
+.todo-list-item.complete .todo-list-item-paragraph {
+    opacity: 50%;
+    text-decoration: line-through;
+}
